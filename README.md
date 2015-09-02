@@ -1,4 +1,4 @@
-xcloudeye
+cloudeye
 ========
 [This is under develpment, it is not a complete version]
 
