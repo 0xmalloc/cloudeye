@@ -5,7 +5,7 @@ A couple of  Distributed Cloud Eyes on your cloud to help you know everything ab
 ## Dependency
 cloudeye use influxdb (version > =0.9) as the mertic storeage, and use grafana to display the metric
 
-## Why do this
+## Why do This
 we need a simple tools to monitor and analysis our logs, logstash + statsd +influxdb + grafana seems to be a perfect solution, but when comes to compex metric under any other tags (like see the latency under sepcific idc, specific action ,sepecific caller, sepecfic host, and all at the same time), it sucks. influxdb (version > 0.9) support tags and is easy to solve this problem but logstash and statsd can not do it,so we make the tool.
 
 ## How to Use
