@@ -95,7 +95,7 @@ the whole config file will be :
 ```
 
 ## The Result
-what will you get to use this simple tools:
+what will you get by using this simple tools? look below:
 ![mahua](https://raw.githubusercontent.com/0xmalloc/cloudeye/master/doc/cloudeye-pic.png)
 
 ## How to Install
