@@ -2,9 +2,13 @@ cloudeye
 ========
 A couple of  Distributed Cloud Eyes on your cloud to help you know everything about your website/service 
 
-## Key concept
+## Dependency
+cloudeye use influxdb (version > =0.9) as the mertic storeage, and use grafana to display the metric
 
-## How to use
+## Why do this
+we need a simple tools to monitor and analysis our logs, logstash + statsd +influxdb + grafana seems to be a perfect solution, but when comes to compex metric under any other tags (like see the latency under sepcific idc, specific action ,sepecific caller, sepecfic host, and all at the same time), it sucks. influxdb (version > 0.9) support tags and is easy to solve this problem but logstash and statsd can not do it,so we make the tool.
+
+## How to Use
 until now the cloudeye only support the log in json format, like these below:
 ```javascript
 {"t":1441077637,"action":"getSession","cost": 213, "db_cost": 23,"redis_cost": 12,"ret": 0, "idc":"yg", "request":{"seqid":"661330e611a6459cba5f5637280202ec","sid":"61443WVUGANICCEMAA4A"},"response":{"code":0}}
@@ -89,7 +93,10 @@ the whole config file will be :
     }
 }
 ```
-## How to install
+
+## The Result
+what will you get to use this simple tools:
+![mahua](https://raw.githubusercontent.com/0xmalloc/cloudeye/master/doc/cloudeye-pic.png)
+
+## How to Install
 go get github.com/0xmalloc/cloudeye
-
-
